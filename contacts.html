@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BuildPro Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-content {
+            padding: 3rem 0;
+            background-color: #f1f8e9;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #43a047;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card h3 {
+            color: #1b5e20;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: #1b5e20;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #43a047;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form-section h2 {
+            color: #1b5e20;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #1b5e20;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #a5d6a7;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2e7d32;
+            box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #43a047;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2e7d32;
+        }
+
+        .business-hours {
+            background-color: #f1f8e9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+        }
+
+        .business-hours h4 {
+            color: #1b5e20;
+            margin-bottom: 1rem;
+        }
+
+        .business-hours p {
+            color: #333;
+            margin: 0.5rem 0;
+        }
+
+        .map-container {
+            margin-top: 3rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container h2 {
+            color: #1b5e20;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background-color: #e8f5e9;
+            border: 2px solid #a5d6a7;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2e7d32;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">BuildPro</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in Touch with BuildPro Construction</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <main class="contact-content">
+        <div class="container">
+
+            <!-- Contact Information Cards -->
+            <div class="contact-grid">
+                <!-- Phone -->
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>Call us for immediate assistance</p>
+                    <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p style="color: #999; font-size: 0.9rem; margin-top: 1rem;">Available Monday - Friday, 8AM - 6PM</p>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>Send us a message anytime</p>
+                    <p><a href="mailto:info@buildpro.com">info@buildpro.com</a></p>
+                    <p style="color: #999; font-size: 0.9rem; margin-top: 1rem;">We'll respond within 24 hours</p>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Visit our office</p>
+                    <p>123 Construction Avenue<br>Building City, BC 12345<br>Canada</p>
+                </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div style="max-width: 600px; margin: 0 auto 2rem;">
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 9:00 AM - 2:00 PM</p>
+                    <p><strong>Sunday & Holidays:</strong> Closed</p>
+                    <p style="color: #2e7d32; margin-top: 1rem; font-style: italic;">Emergency calls accepted 24/7 for urgent matters</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <h2>Our Location</h2>
+                <div class="map-placeholder">
+                    🗺️ Interactive Map Coming Soon<br>
+                    123 Construction Avenue, Building City, BC 12345
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BuildPro Construction. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
