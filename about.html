@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - BuildingPro Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-content {
+            padding: 3rem 0;
+            background-color: #f1f8e9;
+        }
+
+        .section-block {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #43a047;
+        }
+
+        .section-block h2 {
+            color: #1b5e20;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-block h3 {
+            color: #2e7d32;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .section-block p {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .mission-statement {
+            background: linear-gradient(135deg, #a5d6a7 0%, #c8e6c9 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 2px solid #43a047;
+        }
+
+        .mission-statement h3 {
+            color: #1b5e20;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .mission-statement p {
+            color: #1b5e20;
+            font-size: 1.1rem;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background-color: #f1f8e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member h4 {
+            color: #1b5e20;
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .team-member p {
+            color: #2e7d32;
+            font-weight: 500;
+            margin: 0.5rem 0;
+        }
+
+        .team-member .description {
+            color: #666;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+        }
+
+        .values-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .value-item {
+            background-color: #f1f8e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2e7d32;
+        }
+
+        .value-item h4 {
+            color: #1b5e20;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-item p {
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        .timeline {
+            margin-top: 2rem;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            width: 2px;
+            height: 60px;
+            background-color: #a5d6a7;
+        }
+
+        .timeline-item:last-child:before {
+            display: none;
+        }
+
+        .timeline-dot {
+            width: 32px;
+            height: 32px;
+            background-color: #43a047;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .timeline-content {
+            padding-top: 0.5rem;
+        }
+
+        .timeline-content h4 {
+            color: #1b5e20;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">BuildPro</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About BuildPro</h1>
+            <p>Building Dreams, Creating Communities</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <main class="about-content">
+        <div class="container">
+
+            <!-- Mission Statement -->
+            <div class="mission-statement">
+                <h3>Our Mission</h3>
+                <p>To deliver exceptional construction solutions that transform visions into reality, while maintaining the highest standards of quality, safety, and customer satisfaction. We are committed to building structures that stand the test of time and create value for our clients and communities.</p>
+            </div>
+
+            <!-- Company Story -->
+            <div class="section-block">
+                <h2>Our Story</h2>
+                <p>
+                    BuildPro Construction was founded in 2005 by a group of passionate construction professionals with a shared vision: to revolutionize the construction industry with integrity, innovation, and excellence. What started as a small team of five dedicated builders has grown into a leading construction company with a portfolio of over 500 completed projects.
+                </p>
+                <p>
+                    Our founder, Marcus Thompson, began his career as a construction worker in his early twenties, learning every aspect of the trade from the ground up. Frustrated by the lack of quality and professionalism in the industry, Marcus decided to start his own company with a simple promise: deliver superior quality at fair prices, on schedule, every single time.
+                </p>
+                <p>
+                    Over the past two decades, BuildPro has earned a stellar reputation for reliability, craftsmanship, and customer service. We've transformed neighborhoods, revitalized commercial districts, and provided families with the homes of their dreams. Our success is built on the foundation of trust—trust from our clients, trust from our team, and trust in our commitment to excellence.
+                </p>
+
+                <!-- Timeline -->
+                <h3>Our Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2005</div>
+                        <div class="timeline-content">
+                            <h4>Founded</h4>
+                            <p>BuildPro Construction established with 5 core team members and a commitment to quality.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2010</div>
+                        <div class="timeline-content">
+                            <h4>Expansion</h4>
+                            <p>Grew to 50+ employees and completed our 100th project. Opened a second office location.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2015</div>
+                        <div class="timeline-content">
+                            <h4>Industry Recognition</h4>
+                            <p>Received the Construction Excellence Award and expanded services to commercial projects.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2020</div>
+                        <div class="timeline-content">
+                            <h4>Sustainability Focus</h4>
+                            <p>Launched green building initiatives and achieved LEED certification for our operations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2026</div>
+                        <div class="timeline-content">
+                            <h4>Today</h4>
+                            <p>Over 500 projects completed, 150+ team members, and industry leader in sustainable construction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What Makes Us Different -->
+            <div class="section-block">
+                <h2>What Makes BuildPro Different</h2>
+                <p>
+                    In a competitive industry filled with countless construction companies, BuildPro stands out for several key reasons:
+                </p>
+
+                <div class="values-list">
+                    <div class="value-item">
+                        <h4>🎯 Quality First</h4>
+                        <p>We never compromise on materials or craftsmanship. Every project is built to exceed expectations and last for generations.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>🤝 Client Partnership</h4>
+                        <p>We treat every client as a partner. Your vision, concerns, and feedback guide every decision we make.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>⏱️ Reliability</h4>
+                        <p>We deliver on our promises. Our on-time, on-budget record speaks volumes about our professionalism and planning.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>🌱 Sustainability</h4>
+                        <p>We're committed to environmentally responsible construction practices that benefit both clients and the planet.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>👥 Expert Team</h4>
+                        <p>Our experienced professionals bring decades of combined knowledge and passion to every project.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>💡 Innovation</h4>
+                        <p>We embrace new technologies and methods to improve efficiency and deliver better results.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Team -->
+            <div class="section-block">
+                <h2>Leadership Team</h2>
+                <p>
+                    Our success is driven by a team of dedicated professionals who bring years of experience and expertise to every project. Here are some of our key leaders:
+                </p>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h4>Marcus Thompson</h4>
+                        <p>Founder & CEO</p>
+                        <p class="description">With 30+ years in construction, Marcus leads BuildPro with vision and integrity, ensuring every project meets our high standards.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Sarah Mitchell</h4>
+                        <p>Chief Operations Officer</p>
+                        <p class="description">Sarah brings 20 years of project management expertise, overseeing all operational aspects and client relations.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>David Chen</h4>
+                        <p>Chief Engineer</p>
+                        <p class="description">David's innovative engineering solutions and technical expertise have revolutionized our building methods and efficiency.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Emma Rodriguez</h4>
+                        <p>Sustainability Director</p>
+                        <p class="description">Emma leads our green building initiatives and ensures all projects meet our environmental responsibility standards.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>James Wilson</h4>
+                        <p>Safety Manager</p>
+                        <p class="description">James maintains our industry-leading safety record through rigorous training and compliance protocols.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Lisa Thompson</h4>
+                        <p>Client Relations Manager</p>
+                        <p class="description">Lisa ensures every client receives exceptional service and attention throughout their project journey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="section-block">
+                <h2>Our Core Values</h2>
+                <p>
+                    Everything we do at BuildPro is guided by our core values. These principles define who we are and how we conduct business:
+                </p>
+                <div class="values-list">
+                    <div class="value-item">
+                        <h4>Integrity</h4>
+                        <p>We are honest, transparent, and keep our promises. Our word is our bond.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Excellence</h4>
+                        <p>We pursue perfection in every detail, never settling for mediocrity.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Safety</h4>
+                        <p>The well-being of our team and clients is our top priority on every project.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Community</h4>
+                        <p>We invest in the communities we serve and give back through various initiatives.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BuildPro Construction. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
