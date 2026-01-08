@@ -1,10 +1,10 @@
-// Handle navigation to allow smooth scrolling on same page
+// Handle smooth scrolling for anchor links on the same page
 document.addEventListener('DOMContentLoaded', function() {
-    // Get navigation links
-    const navLinks = document.querySelectorAll('a[href^="#"]');
+    // Get all anchor links (links that start with #)
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
     
     // Add smooth scrolling for anchor links
-    navLinks.forEach(link => {
+    anchorLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             const href = this.getAttribute('href');
             const target = document.querySelector(href);
@@ -15,4 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // Navigation links to external pages (about.html, services.html, contacts.html) 
+    // will work naturally by default navigation
 });
