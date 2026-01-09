@@ -1,0 +1,5 @@
+# Netlify configuration for BuildPro Construction Website
+
+[build]
+  publish = "."
+  command = ""
