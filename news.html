@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - BuildPro Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .news-hero {
+            background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .news-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .news-content {
+            padding: 3rem 0;
+            background-color: #f1f8e9;
+        }
+
+        .news-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .news-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #43a047;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-date {
+            color: #43a047;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-card h2 {
+            color: #1b5e20;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .news-card p {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+
+        .news-card .highlight {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .news-category {
+            display: inline-block;
+            background-color: #c8e6c9;
+            color: #1b5e20;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .success-stats {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-stats h2 {
+            color: #1b5e20;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-radius: 8px;
+        }
+
+        .stat-card h3 {
+            color: #2e7d32;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            color: #1b5e20;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">BuildPro</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- News Hero Section -->
+        <section class="news-hero">
+            <div class="container">
+                <h1>Company News & Updates</h1>
+                <p>Latest projects, achievements, and industry insights</p>
+            </div>
+        </section>
+
+        <!-- News Content Section -->
+        <section class="news-content">
+            <div class="news-container">
+                <div class="news-grid">
+                    <!-- News Item 1 -->
+                    <div class="news-card">
+                        <span class="news-category">Project Completion</span>
+                        <div class="news-date">December 15, 2025</div>
+                        <h2>Downtown Office Complex Grand Opening</h2>
+                        <p>BuildPro successfully completed the <span class="highlight">Downtown Office Complex</span>, a state-of-the-art 50,000 square foot commercial building. The project was delivered on schedule and under budget, exceeding client expectations with innovative sustainable design features and modern amenities.</p>
+                        <p>The building has earned LEED Gold certification and features advanced energy-efficient systems, reducing operational costs by 40% compared to traditional buildings.</p>
+                    </div>
+
+                    <!-- News Item 2 -->
+                    <div class="news-card">
+                        <span class="news-category">Award Recognition</span>
+                        <div class="news-date">November 28, 2025</div>
+                        <h2>BuildPro Wins Regional Excellence Award</h2>
+                        <p>BuildPro has been recognized with the <span class="highlight">Regional Construction Excellence Award</span> for outstanding achievement in quality craftsmanship and innovation. The award highlights our commitment to delivering world-class construction services and maintaining the highest safety standards.</p>
+                        <p>This is our third consecutive year receiving this prestigious honor from the National Builders Association.</p>
+                    </div>
+
+                    <!-- News Item 3 -->
+                    <div class="news-card">
+                        <span class="news-category">New Project Launch</span>
+                        <div class="news-date">November 10, 2025</div>
+                        <h2>Groundbreaking for Riverside Residential Community</h2>
+                        <p>BuildPro broke ground on the <span class="highlight">Riverside Residential Community</span>, an expansive 200-unit mixed-use development featuring modern apartments, townhomes, and retail spaces. This project represents a $85 million investment in sustainable urban development.</p>
+                        <p>The community will feature green spaces, smart home technology, and pedestrian-friendly design. Expected completion is scheduled for Q4 2027.</p>
+                    </div>
+
+                    <!-- News Item 4 -->
+                    <div class="news-card">
+                        <span class="news-category">Milestone Achievement</span>
+                        <div class="news-date">October 5, 2025</div>
+                        <h2>BuildPro Celebrates 20 Years of Excellence</h2>
+                        <p>BuildPro marked two decades of delivering exceptional construction services and has become a <span class="highlight">trusted leader in the industry</span>. Over the past 20 years, we have successfully completed over 500 projects and maintained a 98% client satisfaction rate.</p>
+                        <p>Our success is built on the foundation of quality, safety, integrity, and our dedicated team of skilled professionals.</p>
+                    </div>
+
+                    <!-- News Item 5 -->
+                    <div class="news-card">
+                        <span class="news-category">Technology Innovation</span>
+                        <div class="news-date">September 18, 2025</div>
+                        <h2>Adopting Advanced BIM Technology</h2>
+                        <p>BuildPro has integrated <span class="highlight">Building Information Modeling (BIM)</span> technology across all new projects. This cutting-edge approach improves project coordination, reduces waste, and enhances communication between all stakeholders.</p>
+                        <p>The implementation of BIM has resulted in a 25% improvement in project efficiency and better outcomes for our clients.</p>
+                    </div>
+
+                    <!-- News Item 6 -->
+                    <div class="news-card">
+                        <span class="news-category">Sustainability</span>
+                        <div class="news-date">August 22, 2025</div>
+                        <h2>Commitment to Green Building Standards</h2>
+                        <p>BuildPro has committed to making <span class="highlight">sustainable construction</span> the standard for all future projects. We are now requiring LEED certification for commercial projects and implementing eco-friendly practices across residential developments.</p>
+                        <p>This initiative aligns with our corporate responsibility goals to reduce environmental impact and create healthier buildings for our communities.</p>
+                    </div>
+                </div>
+
+                <!-- Success Statistics -->
+                <div class="success-stats">
+                    <h2>Our Success at a Glance</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>500+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>98%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>20+</h3>
+                            <p>Years in Business</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>$2B+</h3>
+                            <p>Total Value Delivered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>150+</h3>
+                            <p>Expert Team Members</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>45+</h3>
+                            <p>Industry Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BuildPro Construction. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
