@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - BuildPro Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-hero {
+            background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .gallery-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-content {
+            padding: 3rem 0;
+            background-color: #f1f8e9;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(27, 94, 32, 0.95), transparent);
+            color: white;
+            padding: 2rem 1rem 1rem;
+            transform: translateY(100px);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-overlay p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .gallery-categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            background-color: white;
+            color: #1b5e20;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #43a047;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background-color: #43a047;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="gallery.html" class="logo">BuildPro</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Gallery Hero Section -->
+        <section class="gallery-hero">
+            <div class="container">
+                <h1>Project Gallery</h1>
+                <p>Showcase of Our Completed Construction Projects</p>
+            </div>
+        </section>
+
+        <!-- Gallery Content -->
+        <section class="gallery-content">
+            <div class="container">
+                <!-- Category Filter -->
+                <div class="gallery-categories">
+                    <button class="category-btn active">All Projects</button>
+                    <button class="category-btn">Residential</button>
+                    <button class="category-btn">Commercial</button>
+                    <button class="category-btn">Renovations</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop" alt="Downtown Office Complex">
+                        <div class="gallery-overlay">
+                            <h3>Downtown Office Complex</h3>
+                            <p>Modern 50,000 sq ft commercial building with sustainable features</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=400&h=300&fit=crop" alt="Residential Community">
+                        <div class="gallery-overlay">
+                            <h3>Riverside Residential Community</h3>
+                            <p>200-unit mixed-use development with green spaces</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1567605011036-1d34d99f27d9?w=400&h=300&fit=crop" alt="Shopping Center">
+                        <div class="gallery-overlay">
+                            <h3>Shopping Center</h3>
+                            <p>Modern retail complex with contemporary design</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1576091160550-112173f31c74?w=400&h=300&fit=crop" alt="Health Facility">
+                        <div class="gallery-overlay">
+                            <h3>Medical Center</h3>
+                            <p>State-of-the-art healthcare facility with advanced infrastructure</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1491841573634-28fb1ddc5d45?w=400&h=300&fit=crop" alt="Educational Building">
+                        <div class="gallery-overlay">
+                            <h3>Educational Institution</h3>
+                            <p>Modern campus building with collaborative learning spaces</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Home Renovation">
+                        <div class="gallery-overlay">
+                            <h3>Modern Home Renovation</h3>
+                            <p>Complete home makeover with contemporary design and luxury finishes</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=400&h=300&fit=crop" alt="Industrial Facility">
+                        <div class="gallery-overlay">
+                            <h3>Industrial Complex</h3>
+                            <p>Large-scale manufacturing facility with modern systems</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop" alt="Office Renovation">
+                        <div class="gallery-overlay">
+                            <h3>Corporate Office Renovation</h3>
+                            <p>High-end office space transformation with modern amenities</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 9 -->
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&h=300&fit=crop" alt="Residential Complex">
+                        <div class="gallery-overlay">
+                            <h3>Apartment Complex</h3>
+                            <p>Multi-unit residential building with premium finishes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BuildPro Construction. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
